@@ -1,0 +1,537 @@
+/*
+Alcumus.css by ihatemath123
+Modified by forester2015, mathlearner2357, and AndrewC10
+
+Colors:
+AoPS Theme Dark Blue: #1B365D
+Button Hover Color: #135B7B
+AoPS Teal: #009FAD
+AoPS Text Color: #CDEEF1
+
+Raw Alcumus is at beginning of CSS, mods are at the end.
+*/
+
+/* import raw alcumus.css */
+
+@import url("https://data.artofproblemsolving.com/blogs/css/1958904.css?");
+
+/* EVERYTHING AFTER THIS IS A MOD OF ALCUMUS.CSS */
+
+:root {
+  --announcement-height: 1500px;
+  --aops-theme: #1b365d;
+  --aops-button-hover: #135b7b;
+  --aops-teal: #009fad;
+  --aops-text-color: #cdeef1;
+}
+
+/* ADMIN ICONS */
+/* forester2015 */
+a[href="/community/user/546163"]::before {
+  content: "X ";
+  font-family: AoPS;
+}
+
+/* AndrewC10 */
+a[href="/community/user/499928"]::before {
+  content: "X ";
+  font-family: AoPS;
+}
+
+/* mathlearner2357 */
+a[href="/community/user/718378"]::before {
+  content: "X ";
+  font-family: AoPS;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+/* SCROLL BAR STUFF */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #aaa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 5px;
+}
+
+/* SCROLL BAR STUFF */
+
+/*pinned post thing*/
+#post-2593561 {
+  position: absolute;
+  overflow: auto;
+  top: 10px;
+  max-height: 40px;
+  scroll-snap-align: end;
+  z-index: 100;
+  transition: 0.8s;
+  width: calc(100% - 10px);
+  z-index: 9999;
+}
+#post-2593561:hover {
+  max-height: var(--announcement-height);
+}
+
+#post-2593561::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+#main > div:nth-of-type(1) {
+  margin-top: 55px;
+}
+#main > div:nth-last-of-type(2),
+#main > div:nth-last-of-type(3) {
+  margin-top: 0px !important;
+}
+#main > div:nth-last-of-type(2)::before,
+#main > div:nth-last-of-type(3)::before {
+  display: none !important;
+}
+
+#main > div:not(.blog-posts-box):last-child::after {
+  content: "\a\a\aNo more topics!";
+  font-size: 15px;
+  color: #333;
+  padding: 5px;
+}
+div#post-2593561.entry h1 {
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-top: 5px;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: left;
+  height: 40px;
+}
+div#post-2593561.entry h1::after {
+  content: " (Hover over me!)";
+  cursor: pointer;
+}
+
+div#post-2593561 .entrywrap {
+  border: solid 2px var(--aops-theme);
+}
+#main > div:nth-of-type(1)::before {
+  position: absolute;
+  content: "";
+  top: 50px;
+  font-size: 18px;
+  left: 12px;
+}
+
+#post-2593561 > h1::before {
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/pin-icon.png");
+  float: left;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+/* remove the "show comments" button for the announcement post */
+#post-2593561 > div > div.efooter > div.actions {
+  display: none;
+}
+
+/*[TEST] icon tags*/
+span[style="font-family:'icon-announcement'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://i.ibb.co/M8xjPjS/megaphone.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-code'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/thehoth/seo/256/seo-web-code-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-warning'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://www.pasadenalawgroup.com/wp-content/uploads/2018/11/ThinkstockPhotos-627455048-1.jpg");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+
+span[style="font-family:'icon-question'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/hopstarter/sleek-xp-basic/256/Help-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-poll'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icon-library.com/images/poll-icon/poll-icon-4.jpg");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-quality'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://www.radiancetech.com/wp-content/uploads/2019/01/quality-icon-blue.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-css'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/martz90/hex/512/css-3-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+
+#side .cmty-itembox {
+  height: 300px;
+  width: 210px;
+}
+
+#feed-wrapper {
+  display: none;
+}
+
+div#left_navigation_box:last-child {
+  color: #fff !important;
+}
+
+/* Fluid archives by happycupcake*/
+.month-image {
+  background: url(https://cdn.iconscout.com/icon/free/png-256/right-arrow-1767593-1502497.png) !important;
+  background-size: 16px 16px !important;
+  padding-left: 16px;
+  width: 16px;
+  height: 16px;
+  transition: transform 1s;
+  transform: rotate(90deg);
+}
+.month-image[alt="+"] {
+  transition: transform 1s;
+  transform: rotate(-360deg);
+}
+.archive-month-topics {
+  display: block;
+  height: auto;
+}
+.archive-row {
+  transition: transform 0.4s 0.2s, height 0.4s;
+  height: 20px;
+  padding: 0 0 0 30px;
+}
+.archive-month-collapsed .archive-row {
+  transition: transform 0.4s, height 0.2s 0.2s;
+  transform: scaleY(0);
+  height: 0;
+}
+
+/* lock topic button */
+body
+  > div.aops-modal-wrapper
+  > div
+  > div
+  > div.aops-modal-noscroll
+  > div
+  > div
+  > div
+  > div.cmty-moderate-topic-buttons
+  > button:nth-child(1) {
+  background-color: var(--aops-theme);
+  margin: 10px 0px 0px 105px;
+}
+
+/* delete topic button */
+body
+  > div.aops-modal-wrapper
+  > div
+  > div
+  > div.aops-modal-noscroll
+  > div
+  > div
+  > div
+  > div.cmty-moderate-topic-buttons
+  > button:nth-child(3) {
+  background-color: var(--aops-theme);
+  margin: 6px 30px 0px 101px;
+}
+
+/* lock topic/delete topic hover */
+body
+  > div.aops-modal-wrapper
+  > div
+  > div
+  > div.aops-modal-noscroll
+  > div
+  > div
+  > div
+  > div.cmty-moderate-topic-buttons
+  > button:nth-child(1):hover,
+body
+  > div.aops-modal-wrapper
+  > div
+  > div
+  > div.aops-modal-noscroll
+  > div
+  > div
+  > div
+  > div.cmty-moderate-topic-buttons
+  > button:nth-child(3):hover {
+  background-color: var(--aops-button-hover);
+}
+
+/* modal tilte */
+.aops-modal-title {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  padding: 0 10px;
+  color: var(--aops-theme);
+  font-weight: 700;
+  padding: 5px 0px 0px 13px;
+}
+
+/* modal frame */
+.aops-modal-frame {
+  border: none;
+  background-color: #fff;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 6px;
+  box-sizing: content-box;
+  box-shadow: none;
+}
+
+/* background of modal title */
+.aops-modal-standard .aops-modal-title,
+.aops-modal-plain-body .aops-modal-title {
+  background-color: white;
+  padding: 5px 0px 0px 13px;
+}
+
+/* modal close button */
+.aops-close-x {
+  width: 21px;
+  height: 21px;
+  color: var(--aops-theme);
+  position: absolute;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: AoPS;
+  cursor: pointer;
+  background-color: #0000;
+}
+
+.aops-close-x:hover {
+  color: var(--aops-teal);
+}
+
+p#post-new-entry-p {
+  position: absolute;
+  top: -30px;
+}
+
+.cmty-posting-top {
+  background-color: #ccc;
+  color: #222;
+}
+.cmty-posting-forum-name {
+  background-color: #20458c !important;
+  color: #fff;
+}
+textarea.cmty-post-textarea {
+  border: solid 5px #ccc !important;
+}
+.cmty-posting-button-row {
+  background-color: #ccc !important;
+}
+.aops-scroll-outer.aops-scrollbar-not-visible.cmty-scroll-outer {
+  border: solid 5px #ccc;
+  border-top: none;
+}
+
+/* min height and max height stuff */
+/*
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) {
+height:200px;
+overflow-y: hidden;
+margin-bottom: 20px;
+}
+
+
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) .efooter::before {
+    position: absolute;
+    content: "ok hi";
+    width: 904px;
+    height: 30px;
+    bottom: 60px;
+    color: #fff0;
+    right: -11px;
+    background-image: linear-gradient( 
+0deg
+ , #fff, #0000);
+    transition: 0.2s;
+    z-index: -1;
+    pointer-events: none;
+}
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) .efooter:hover::before {
+    bottom: 2px;
+}
+
+
+
+div#post-2593561.entry::before {
+    display: none;
+}
+
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) .efooter {
+    position: absolute;
+    width: 255px;
+    right: 11px;
+    background-color: #fff;
+    box-shadow: #000 0px 0px 5px -2px;
+    padding: 5px;
+    bottom: -20px;
+    z-index: 1000;
+    transition: 0.2s;
+    padding-top: 20px;
+}
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) .efooter:hover {
+    bottom: 38px;
+    padding-top: 5px;
+}
+
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) .cmty-tags-itembox-wrapper {
+    display: none;
+}
+
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) h1 a::after {
+    content: " (Click on post for full content)";
+    color: #fff0;
+    transition: 0.2s;
+}
+#main>div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) .entry:not(#post-2593561) h1 a:hover::after {
+    color: #fff;
+} */
+/* end experiment */
+
+#main h1 a {
+  padding: 0px 0px 0px 5px;
+  color: #fff;
+  margin: 0;
+  display: block;
+  text-decoration: none !important;
+}
+.aops-modal-content-wrapper {
+  box-shadow: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+/* remove underline in archive month and each entry */
+a:link:hover {
+  text-decoration: none;
+}
+
+a > .cmty-item-tag::before {
+  content: "#";
+}
+
+div.cmty-tags-itembox-wrapper > div > div {
+  float: right;
+}
+
+.cmty-itembox .aops-scroll-bar {
+  border-radius: 5px;
+}
+
+.cmty-items-input-box .cmty-item-tag {
+  float: left;
+}
+
+.cmty-post-edit-info {
+  display: none !important;
+  width: 0px;
+}
+
+.cmty-item-tag:hover {
+  background-color: #1b365d14 !important;
+  color: #1b365d !important;
+}
+.cmty-item-tag {
+  background-color: #fff0 !important;
+  transition: 0.2s;
+  color: #1b365d !important;
+  border-radius: 0px;
+  padding: 15px 5px;
+  line-height: 0px;
+  margin: 0px;
+}
+.cmty-tags-itembox-wrapper .cmty-itembox {
+  height: auto;
+  width: fit-content;
+}
+
+/* fixes stuff */
+div .entrywrap,
+div .entrywrap-hover {
+  margin: 19px 6px 5px 6px;
+}
