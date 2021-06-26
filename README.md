@@ -7,3 +7,4 @@ CSS for my AoPS Blog: https://artofproblemsolving.com/community/c1632725
 - **ihatemath123** for alcumus.css, and fixing announcement post issue
 - **AndrewC10** for creating the announcement post
 - **forester2015** for modifying the CSS to make it look more like AoPS pages
+- **sealsrock** for making the spinning arrow for the announcement post

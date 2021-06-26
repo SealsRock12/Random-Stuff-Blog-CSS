@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+/*
+__________________________|_alcumus.css_|__________________________
+                                                  -version 1.1-
+                                by the (very og) IHATEMATH123
+                                 CLEARLY THE BEST CSS EVER
+                     If you use this CSS, please keep this header
+                         (to remind everybody how lit this css is)
+*/
+
+:root {
+  --main-size: min(90%, 1200px);
+  --side-size: min(250px, 30%);
+}
+
+div#header {
+  background-color: white;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  border: none;
+  height: 100px;
+  z-index: 101;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+div#header h1 {
+  background-image: url(https://i.ibb.co/6gnby5B/image.png);
+  background-repeat: no-repeat;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  line-height: 2;
+  font-size: 36px;
+  width: 80%;
+  margin-left: calc((100% - var(--main-size)) / 2);
+  margin-right: auto;
+  color: #1b365d;
+  padding: 0px 0px 0px 69px;
+  transition: 0s;
+}
+div#header h1:hover {
+  text-decoration: none;
+}
+div#navigation_box a {
+  color: #cdeef1;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  transition: 0s;
+}
+div#navigation_box a:hover {
+  text-decoration: underline;
+}
+#left_navigation_box,
+#right_navigation_box {
+  color: #cdeef1;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+  height: 20px;
+}
+#left_navigation_box {
+  margin: 3px 0px 0px calc((100% - var(--main-size)) / 2);
+}
+#right_navigation_box {
+  margin: 3px calc((100% - var(--main-size)) / 2) 0px 0px;
+}
+
+div#navigation_box {
+  border-bottom: none;
+  margin-top: 86px;
+  font-family: Roboto, sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  height: 27px;
+  background-color: #009fad;
+  color: #cdeef1;
+  position: sticky !important;
+}
+div#navigation_box a[href = "https://artofproblemsolving.com/community/c1958904_alcumuscss"]
+{
+  color: #fff;
+}
+
+body {
+  background-image: url(https://artofproblemsolving.com/assets/images/top/pattern-online-gray.png);
+  background-repeat: repeat;
+  z-index: 10;
+}
+
+div#wrapper {
+  margin-top: 39px;
+  margin-left: calc((100% - var(--main-size)) / 2);
+  width: var(--main-size);
+  background-color: #fff0;
+  background-image: none;
+  border: none;
+  z-index: 1;
+}
+
+div#content {
+  background-color: #fff0;
+}
+
+h2 img {
+  display: none;
+}
+#main {
+  width: calc(100% - 20px - var(--side-size));
+  float: right;
+  background-color: white;
+  position: relative;
+  background-color: #fff0;
+}
+a:link {
+  color: #2188e0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a:link:hover {
+  text-decoration: underline;
+}
+img#post-new-entry-img {
+  display: none;
+}
+a#post-new-entry {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b365d;
+  font-size: 15px;
+  margin-left: 9px;
+  color: #fff;
+  padding: 3px 12px;
+}
+a#post-new-entry:hover {
+  text-decoration: none;
+  background-color: #356cb5;
+}
+div.modactions ul li a,
+div.actions ul li a {
+  display: inline;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+#main h1 {
+  color: white;
+  background-color: #1b365d;
+  margin: 0px 6px 0px 6px;
+  box-shadow: 1px 1px 4px 0px #888;
+}
+
+#main h1 a {
+  margin: 0px 0px 0px 5px;
+  color: #fff;
+}
+h2 {
+  color: #fff;
+  font-size: 10pt;
+  font-weight: normal;
+  margin: 0px 0px -19px 6px;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  background-color: #009fad;
+  width: calc(100% - 12px);
+  padding-left: 8px;
+  box-shadow: 1px 1px 4px 0px #888;
+}
+h2::before {
+  content: "Posted ";
+}
+a.username-coloured {
+  color: #1b365d !important;
+  font-weight: lighter;
+}
+div .entrywrap,
+div .entrywrap-hover {
+  background-color: #fff;
+  border: none;
+  margin: 19px 6px 5px 6px;
+  overflow-y: visible;
+  padding: 0.5em;
+  height: 99%;
+  position: relative;
+  box-shadow: 1px 1px 4px 0px #888;
+}
+
+.message {
+  overflow: hidden;
+  margin: 3px;
+  font-family: "Roboto", sans-serif;
+}
+.cmty-post-edited .cmty-post-edit-info {
+  display: block;
+  font-size: 0px;
+}
+div.entry {
+  border-bottom: none;
+  margin-top: 0px;
+  overflow-y: visible;
+  padding-bottom: 1em;
+}
+a.post-replies {
+  font-family: "Roboto", sans-serif;
+}
+
+a.post-comment {
+  font-family: "Roboto", sans-serif;
+  margin-left: 9px;
+}
+
+a.blog-post-comment {
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+}
+
+div.blog-reply-window.cmty-reply-window.blog-reply-open {
+  margin: 0px 5px 0px 5px;
+}
+div.modactions span {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b365d;
+  font-size: 15px !important;
+  margin-right: 9px;
+  color: #fff;
+  padding: 3px 12px;
+}
+div.modactions span:hover {
+  text-decoration: none;
+  background-color: #356cb5;
+}
+div.commentwrap {
+  height: auto;
+  overflow: auto;
+  padding: 0.5em 0.5em 0 0.5em;
+  position: relative;
+  background-color: #fff;
+}
+div.commentwrap {
+  height: auto;
+  overflow: auto;
+  padding: 0.5em 0.5em 0 0.5em;
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+}
+div.blog-posts-box {
+  margin: 0px 5px 0px 5px;
+}
+div.blog-no-topics {
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+}
+.aops-close-x {
+  width: 21px;
+  color: #fff;
+  position: absolute;
+  top: 0px;
+  font-size: 16px;
+  right: 0px;
+  font-family: AoPS;
+}
+
+/* SIDE WIDGET */
+#side {
+  width: var(--side-size);
+  float: left;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin-top: -39px;
+  background-color: #009fad;
+  font-family: Roboto, sans-serif;
+}
+div .widget-title {
+  font-size: 18px;
+  padding-left: 0px;
+  background-color: #fff;
+  color: #1b365d;
+}
+#user-menu-widget {
+  clear: both;
+  background-color: #fff;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0px 10px 10px 10px;
+}
+b,
+strong,
+.strong,
+.bold {
+  font-weight: bold;
+}
+b:hover,
+strong:hover,
+.strong:hover,
+.bold:hover {
+  text-decoration: underline;
+}
+
+#message {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+span#submit {
+  background-color: #1b365d;
+  color: #fff;
+  padding: 3px 12px;
+  font-size: 15px;
+}
+span#submit:hover {
+  background-color: #356cb5;
+}
+#shout-helper {
+  display: none;
+  padding-bottom: 10px;
+}
+
+#shouts-widget li {
+  overflow-x: hidden;
+  width: 95%;
+  background-color: #fff;
+  border-bottom: 1px solid #404040;
+  color: #0c2994;
+  font-size: 14px;
+}
+.blog-shout .aops-icon {
+  font-size: 16px;
+  color: #1b365d;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.blog-shout .aops-icon:hover {
+  color: #356cb5;
+}
+/* THANK YOU HAPPYCUPCAKE THIS IS THE CODE THAT MAKES THE SCROLL STUFF WORK */
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner {
+  scrollbar-width: none;
+}
+.blog-shout-wrapper
+  > .aops-scroll-outer
+  > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px; /*Yay for nonstandard behavior /s.*/
+}
+.blog-tags-wrapper
+  > .cmty-itembox
+  > .aops-scroll-outer
+  > .aops-scroll-inner::-webkit-scrollbar {
+  display: none;
+}
+.blog-tags-wrapper
+  > .cmty-itembox
+  > .aops-scroll-outer
+  > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px; /*Yay for nonstandard behavior /s.*/
+}
+
+.blog-scroll-outer {
+  position: absolute;
+}
+.blog-tags-wrapper .blog-scroll-outer {
+  padding-left: 10px;
+  background-color: #fff;
+}
+fieldset.blog-tags-wrapper {
+  border: 2px groove threedface;
+  display: block;
+  background-color: #fff;
+  padding: 0;
+}
+
+#blog_searchform {
+  color: #fff;
+  margin-top: 5px;
+  white-space: nowrap;
+  width: 148%;
+}
+input.button2 {
+  font-family: "Roboto", sans-serif;
+  background-color: #1b365d;
+  font-size: 15px;
+  margin-left: 9px;
+  color: #fff;
+  padding: 3px 12px;
+}
+input.button2:hover {
+  background-color: #356cb5;
+}
+#side > div:not(#user-menu-widget) {
+  clear: both;
+  background-color: #fff;
+  padding: 10px 10px 10px 10px !important;
+  margin: 0px 10px 10px 10px;
+  width: calc(100% - 20px);
+}
+
+.cmty-poll-display {
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+  border: none;
+  background-color: #fff;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+div.cmty-poll-question {
+  font-size: 20px;
+  text-align: center;
+}
+.cmty-poll-display-top {
+  font-style: italic;
+  font-size: 0px;
+}
+
+span.blog-num-comments {
+  font-family: "Roboto", sans-serif;
+  margin-left: 5px;
+}
+
+fieldset {
+  border: none;
+  display: block;
+  background-color: #0000;
+  margin: 0 2px;
+  padding: 0;
+}

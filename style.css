@@ -1,21 +1,31 @@
 /*
 Alcumus.css by ihatemath123
-Modified by forester2015, mathlearner2357, and AndrewC10
+Modified by forester2015, mathlearner2357, AndrewC10, and sealsrock
+
+Alcumus.css: "https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/alcumus-css.css
+CSS (backup): https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/style.css
 
 Colors:
 AoPS Theme Dark Blue: #1B365D
 Button Hover Color: #135B7B
 AoPS Teal: #009FAD
 AoPS Text Color: #CDEEF1
-
-Raw Alcumus is at beginning of CSS, mods are at the end.
 */
 
-/* import raw alcumus.css */
+/* IMPORT ALCUMUS.CSS
+CREDITS TO:
+  * ihatemath123
+*/
+@import url("https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/alcumus-css.css");
 
-@import url("https://data.artofproblemsolving.com/blogs/css/1958904.css?");
-
-/* EVERYTHING AFTER THIS IS A MOD OF ALCUMUS.CSS */
+/* 
+EVERYTHING AFTER THIS IS A MOD OF ALCUMUS.CSS 
+CREDITS TO:
+  * AndrewC10
+  * forester2015
+  * sealsrock
+  * ihatemath123
+*/
 
 :root {
   --announcement-height: 1500px;
@@ -25,22 +35,34 @@ Raw Alcumus is at beginning of CSS, mods are at the end.
   --aops-text-color: #cdeef1;
 }
 
-/* ADMIN ICONS */
+/* ADMIN ICONS Credit to GG Otto*/
 /* forester2015 */
 a[href="/community/user/546163"]::before {
-  content: "X ";
+  content: "X";
   font-family: AoPS;
 }
 
 /* AndrewC10 */
 a[href="/community/user/499928"]::before {
-  content: "X ";
+  content: "X";
   font-family: AoPS;
 }
 
 /* mathlearner2357 */
 a[href="/community/user/718378"]::before {
-  content: "X ";
+  content: "X";
+  font-family: AoPS;
+}
+
+/* ihatemath123 */
+a[href="/community/user/419930"]::before {
+  content: "X";
+  font-family: AoPS;
+}
+
+/* sealsrock */
+a[href="/community/user/364963"]::before {
+  content: "X";
   font-family: AoPS;
 }
 
@@ -78,6 +100,7 @@ a[href="/community/user/718378"]::before {
   transition: 0.8s;
   width: calc(100% - 10px);
   z-index: 9999;
+  overflow-y: hidden;
 }
 #post-2593561:hover {
   max-height: var(--announcement-height);
@@ -108,15 +131,28 @@ a[href="/community/user/718378"]::before {
 }
 div#post-2593561.entry h1 {
   padding-left: 10px;
-  padding-right: 100px;
+  padding-right: 5px;
   padding-top: 5px;
   font-weight: bold;
   letter-spacing: normal;
   text-align: left;
   height: 40px;
 }
+
 div#post-2593561.entry h1::after {
-  content: " (Hover over me!)";
+  content: " ";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='chevron-up' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='white' d='M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z' class=''%3E%3C/path%3E%3C/svg%3E");
+  margin-top: -30px;
+  float: right;
+  background-size: 30px 30px;
+  transition: transform 0.8s;
+}
+
+div#post-2593561.entry h1:hover::after {
+  transform: rotate(540deg);
   cursor: pointer;
 }
 
@@ -140,6 +176,7 @@ div#post-2593561 .entrywrap {
   width: 32px;
   background-repeat: no-repeat;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 /* remove the "show comments" button for the announcement post */
@@ -283,7 +320,13 @@ div#left_navigation_box:last-child {
   height: 0;
 }
 
-/* lock topic button */
+/* moderate button */
+.cmty-moderate-topic-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* lock topic button & delete topic button */
 body
   > div.aops-modal-wrapper
   > div
@@ -293,12 +336,7 @@ body
   > div
   > div
   > div.cmty-moderate-topic-buttons
-  > button:nth-child(1) {
-  background-color: var(--aops-theme);
-  margin: 10px 0px 0px 105px;
-}
-
-/* delete topic button */
+  > button:nth-child(1),
 body
   > div.aops-modal-wrapper
   > div
@@ -309,8 +347,8 @@ body
   > div
   > div.cmty-moderate-topic-buttons
   > button:nth-child(3) {
+  margin: 3px;
   background-color: var(--aops-theme);
-  margin: 6px 30px 0px 101px;
 }
 
 /* lock topic/delete topic hover */
@@ -345,7 +383,6 @@ body
   padding: 0 10px;
   color: var(--aops-theme);
   font-weight: 700;
-  padding: 5px 0px 0px 13px;
 }
 
 /* modal frame */
@@ -363,7 +400,6 @@ body
 .aops-modal-standard .aops-modal-title,
 .aops-modal-plain-body .aops-modal-title {
   background-color: white;
-  padding: 5px 0px 0px 13px;
 }
 
 /* modal close button */
@@ -372,11 +408,13 @@ body
   height: 21px;
   color: var(--aops-theme);
   position: absolute;
+  top: -4px;
   font-size: 20px;
   line-height: 20px;
+  right: -6px;
   font-family: AoPS;
   cursor: pointer;
-  background-color: #0000;
+  background-color: #ffffff00;
 }
 
 .aops-close-x:hover {
@@ -388,17 +426,11 @@ p#post-new-entry-p {
   top: -30px;
 }
 
-.cmty-posting-top {
-  background-color: #ccc;
-  color: #222;
-}
 .cmty-posting-forum-name {
   background-color: #20458c !important;
   color: #fff;
 }
-textarea.cmty-post-textarea {
-  border: solid 5px #ccc !important;
-}
+
 .cmty-posting-button-row {
   background-color: #ccc !important;
 }
@@ -494,10 +526,10 @@ a:link:hover {
 a > .cmty-item-tag::before {
   content: "#";
 }
-
+/*
 div.cmty-tags-itembox-wrapper > div > div {
   float: right;
-}
+}*/
 
 .cmty-itembox .aops-scroll-bar {
   border-radius: 5px;
@@ -524,7 +556,9 @@ div.cmty-tags-itembox-wrapper > div > div {
   padding: 15px 5px;
   line-height: 0px;
   margin: 0px;
+  border-radius: 6px;
 }
+
 .cmty-tags-itembox-wrapper .cmty-itembox {
   height: auto;
   width: fit-content;
@@ -534,4 +568,99 @@ div.cmty-tags-itembox-wrapper > div > div {
 div .entrywrap,
 div .entrywrap-hover {
   margin: 19px 6px 5px 6px;
+}
+
+/* moderate section margin */
+div.modactions {
+  margin-bottom: 5px;
+}
+#main
+  > div.blog-posts-box
+  > div
+  > div.commentwrap
+  > div.cfooter
+  > div.modactions {
+  margin-bottom: 7px;
+}
+
+/* moderate button hover */
+div.modactions span:hover {
+  background-color: var(--aops-button-hover);
+}
+
+/* remove weird gray background color */
+.aops-modal-standard .aops-modal-footer,
+.aops-modal-plain-body .aops-modal-footer {
+  background-color: white;
+}
+
+/* primary buttons */
+.btn-primary {
+  background-color: var(--aops-theme);
+}
+
+/* primary buttons hover and focus */
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--aops-button-hover);
+}
+
+a#post-new-entry:hover {
+  background-color: var(--aops-button-hover);
+}
+
+/* header of blog */
+div#header h1 {
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+/* no underline */
+b:hover,
+strong:hover,
+.strong:hover,
+.bold:hover {
+  text-decoration: none;
+}
+
+/* weird img before commenter's username */
+.blog-direct-post-link {
+  display: none;
+}
+
+.cmty-posting-modal .aops-close-x {
+  top: 6px;
+  right: 2px;
+  color: #fff;
+}
+
+.cmty-posting-modal .aops-close-x:hover {
+  color: var(--aops-teal);
+}
+
+.btn-primary:focus {
+  outline: 0;
+}
+
+#shouts-widget > div.widget-content > fieldset > div {
+  width: 104%;
+}
+
+#shouts-widget > div.widget-header,
+#side > div:nth-child(4) > div.widget-header {
+  margin-bottom: 5px;
+}
+
+#side > div:nth-child(4) > div.widget-content > fieldset {
+  margin: 0 auto;
+}
+
+div.efooter > div.actions > ul > li:nth-child(1) > a::before {
+  content: "4\00a0\00a0";
+  font-family: AoPS;
+}
+
+div.efooter > div.actions > ul > li:nth-child(2) > a::before {
+  content: "N\00a0\00a0";
+  font-family: AoPS;
 }
