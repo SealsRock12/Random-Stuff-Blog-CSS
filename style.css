@@ -151,7 +151,7 @@ div#post-2593561.entry h1::after {
   transition: transform 0.8s;
 }
 
-div#post-2593561.entry h1:hover::after {
+div#post-2593561.entry:hover h1::after {
   transform: rotate(540deg);
   cursor: pointer;
 }
@@ -663,4 +663,10 @@ div.efooter > div.actions > ul > li:nth-child(1) > a::before {
 div.efooter > div.actions > ul > li:nth-child(2) > a::before {
   content: "N\00a0\00a0";
   font-family: AoPS;
+}
+
+@media (max-width: 480px), (max-height: 480px) {
+	a.blog-info {
+		display: inline-block !important;
+	}
 }
