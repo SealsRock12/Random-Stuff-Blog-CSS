@@ -12,10 +12,7 @@ AoPS Teal: #009FAD
 AoPS Text Color: #CDEEF1
 */
 
-/* IMPORT ALCUMUS.CSS
-CREDITS TO:
-  * ihatemath123
-*/
+/* ALCUMUS.CSS BY IHATEMATH123 */
 @import url("https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/alcumus-css.css");
 
 /* 
@@ -526,10 +523,6 @@ a:link:hover {
 a > .cmty-item-tag::before {
   content: "#";
 }
-/*
-div.cmty-tags-itembox-wrapper > div > div {
-  float: right;
-}*/
 
 .cmty-itembox .aops-scroll-bar {
   border-radius: 5px;
@@ -656,7 +649,7 @@ strong:hover,
 }
 
 div.efooter > div.actions > ul > li:nth-child(1) > a::before {
-  content: "4\00a0\00a0";
+  content: "t\00a0\00a0";
   font-family: AoPS;
 }
 
@@ -666,7 +659,7 @@ div.efooter > div.actions > ul > li:nth-child(2) > a::before {
 }
 
 @media (max-width: 480px), (max-height: 480px) {
-	a.blog-info {
-		display: inline-block !important;
-	}
+  a.blog-info {
+    display: inline-block !important;
+  }
 }
