@@ -60,9 +60,11 @@ div#navigation_box a:hover {
   font-family: Roboto, sans-serif;
   height: 20px;
 }
+
 #left_navigation_box {
   margin: 3px 0px 0px calc((100% - var(--main-size)) / 2);
 }
+
 #right_navigation_box {
   margin: 3px calc((100% - var(--main-size)) / 2) 0px 0px;
 }
@@ -79,6 +81,7 @@ div#navigation_box {
   color: #cdeef1;
   position: sticky !important;
 }
+
 div#navigation_box a[href = "https://artofproblemsolving.com/community/c1958904_alcumuscss"]
 {
   color: #fff;
