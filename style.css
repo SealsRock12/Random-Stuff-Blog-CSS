@@ -89,7 +89,7 @@ a[href="/community/user/364963"]::before {
 /* SCROLL BAR STUFF */
 
 /*pinned post thing*/
-#post-2606724 {
+#post-2609683 {
   position: absolute;
   overflow: auto;
   top: 10px;
@@ -101,11 +101,11 @@ a[href="/community/user/364963"]::before {
   z-index: 9999;
   overflow-y: hidden;
 }
-#post-2606724:hover {
+#post-2609683:hover {
   max-height: var(--announcement-height);
 }
 
-#post-2606724::-webkit-scrollbar {
+#post-2609683::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
@@ -128,7 +128,7 @@ a[href="/community/user/364963"]::before {
   color: #333;
   padding: 5px;
 }
-div#post-2606724.entry h1 {
+div#post-2609683.entry h1 {
   padding-left: 10px;
   padding-right: 5px;
   padding-top: 5px;
@@ -138,7 +138,7 @@ div#post-2606724.entry h1 {
   height: 40px;
 }
 
-div#post-2606724.entry h1::after {
+div#post-2609683.entry h1::after {
   content: " ";
   width: 30px;
   height: 30px;
@@ -150,12 +150,12 @@ div#post-2606724.entry h1::after {
   transition: transform 0.8s;
 }
 
-div#post-2606724.entry:hover h1::after {
+div#post-2609683.entry:hover h1::after {
   transform: rotate(540deg);
   cursor: pointer;
 }
 
-div#post-2606724 .entrywrap {
+div#post-2609683 .entrywrap {
   border: solid 2px var(--aops-theme);
 }
 #main > div:nth-of-type(1)::before {
@@ -166,7 +166,7 @@ div#post-2606724 .entrywrap {
   left: 12px;
 }
 
-#post-2606724 > h1::before {
+#post-2609683 > h1::before {
   content: "   ";
   background-image: url("https://icons.iconarchive.com/icons/paomedia/small-n-flat/512/pin-icon.png");
   float: left;
@@ -179,7 +179,7 @@ div#post-2606724 .entrywrap {
 }
 
 /* remove the "show comments" button for the announcement post */
-#post-2606724 > div > div.efooter > div.actions {
+#post-2609683 > div > div.efooter > div.actions {
   display: none;
 }
 
