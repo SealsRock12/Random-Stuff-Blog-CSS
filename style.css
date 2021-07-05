@@ -689,7 +689,7 @@ div.efooter > div.actions > ul > li:nth-child(2) > a::before {
 
 /* search button hover */
 input.button2:hover {
-  color: var(--aops-button-hover);
+  background-color: var(--aops-button-hover);
 }
 
 /* comment button icon */

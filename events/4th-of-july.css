@@ -15,93 +15,119 @@ AoPS Teal: #009FAD
 AoPS Text Color: #CDEEF1
 */
 
-@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css"); 
-
+/* IMPORT MAIN CSS */
+@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css");
 
 div #header {
-    background-color: black !important;
+  background-color: black !important;
 }
 div#header h1 {
-    background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png);
-    background-size: auto 100%;
-    padding-left: 145px;
-    color: white;
-width:50px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png);
+  background-size: auto 100%;
+  padding-left: 145px;
+  color: white;
+  width: 50px;
 }
 
 div#navigation_box a {
-    color: #fff;
+  color: #fff;
 }
 div#navigation_box {
-    background-color: #3c3b6e;
+  background-color: #3c3b6e;
 }
 
 div#side {
-    background-color: #3c3b6e;
+  background-color: #3c3b6e;
 }
 
 a#post-new-entry {
-    background-color: #3c3b6e;
+  background-color: #3c3b6e;
 }
 
 #main h1 a {
-    color: #fff;
+  color: #fff;
 }
 #main h1 {
-    background-color: #3c3b6e;
+  background-color: #3c3b6e;
 }
 h2 {
-    background-color: #d21313;
+  background-color: #d21313;
 }
 
-div.modactions span, span#submit, input.button2, button.btn.btn-primary {
-    background-color: #fff0;
-    background-image: repeating-linear-gradient(
-180deg
-, #fff 4px, #fff 8px, #e46666 8px, #e46666 12px);
-    color: #3d3c6f;
-    border: solid 1px #000;
-    font-weight: bold;
-    letter-spacing: normal;
-    background-position: 0px 0px;
-backdrop-filter: opacity(2px);
+div.modactions span,
+span#submit,
+input.button2,
+button.btn.btn-primary {
+  background-color: #fff0;
+  background-image: repeating-linear-gradient(
+    180deg,
+    #fff 4px,
+    #fff 8px,
+    #e46666 8px,
+    #e46666 12px
+  );
+  color: #3d3c6f;
+  border: solid 1px #000;
+  font-weight: bold;
+  letter-spacing: normal;
+  background-position: 0px 0px;
+  backdrop-filter: opacity(2px);
 }
 
 .shouts-widget li p {
-color: white;
+  color: white;
 }
 
 @keyframes backgroundmove {
-    0% {background-position: 0px 0px;}
-    100% {background-position: 0px 8px;}
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 8px;
+  }
 }
 @keyframes backgroundmove2 {
-    0% {background-position: 0px 0px;}
-    100% {background-position: 0px 95vw;}
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 95vw;
+  }
 }
-div.modactions span:hover, span#submit:hover, input.button2:hover, button.btn.btn-primary:hover {
-    animation: backgroundmove 0.5s linear infinite;
+div.modactions span:hover,
+span#submit:hover,
+input.button2:hover,
+button.btn.btn-primary:hover {
+  animation: backgroundmove 0.5s linear infinite;
 }
 div#page-wrapper {
-    background-image: url(https://media0.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif);
-    background-size: auto 100%;
-    background-attachment: fixed;
+  background-image: url(https://media0.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif);
+  background-size: auto 100%;
+  background-attachment: fixed;
 }
 .entry h2 {
-color: white;
+  color: white;
 }
 
-.entrywrap, .commentwrap{background-color:black !important;}
-#side *, .month-image, .entrywrap *, .commentwrap *{filter:invert(100%);}
+.entrywrap,
+.commentwrap {
+  background-color: black !important;
+}
+#side *,
+.month-image,
+.entrywrap *,
+.commentwrap * {
+  filter: invert(100%);
+}
 
 div#page-wrapper::before {
-    position: fixed;
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    top: 0px;
-    left: 0px;
-    background-color: #fff0;
-    backdrop-filter: blur(8px);
+  position: fixed;
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background-color: #fff0;
+  backdrop-filter: blur(8px);
 }
