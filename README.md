@@ -22,8 +22,8 @@ Alcumus.css (made by ihatemath123), with modifications done by:
 - sealsrock12
 - ihatemath123
 
-If you want to propose a change/fix a bug, please make a pull request here: https://github.com/Coding-Bot-1/Random-Stuff-Blog-CSS
+If you want to propose a change/fix a bug, please make a pull request here: https://github.com/BypassSpace/Random-Stuff-Blog-CSS
 */
 
-@import url("https://raw.githack.com/Coding-Bot-1/Random-Stuff-Blog-CSS/main/style.css")
+@import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css")
 ```
