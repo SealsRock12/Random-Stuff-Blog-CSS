@@ -18,38 +18,6 @@ AoPS Text Color: #CDEEF1
 @import url("https://raw.githack.com/BypassSpace/Random-Stuff-Blog-CSS/main/style.css"); 
 
 
-/*
-#navigation_box{
-background-color:white !important;
-}
-#navigation_box>div>a{
-color:black !important;
-}
-body{
-background-image:none;
-background: #009fad;
-}
-#main h1{
-background-color: #D22B2B !important;
-}
-h2{
-background-color:white;
-color:black !important;
-}
-.entrywrap{
-color:white !important;
-border: 2px solid white !important;
-background-color:transparent !important;
-}
-.entrywrap a {
-color:white !important;
-}
-.widget{
-background-color:linear-graident(to top, #D22B2B, white, #009fad) !important;
-} */
-
-
-
 div #header {
     background-color: black !important;
 }
@@ -115,9 +83,6 @@ div.modactions span:hover, span#submit:hover, input.button2:hover, button.btn.bt
     animation: backgroundmove 0.5s linear infinite;
 }
 div#page-wrapper {
-    /* background: repeating-linear-gradient(
-0deg
-, #fff 0px, #fff 20px, #d21313 20px, #d21313 40px); */
     background-image: url(https://media0.giphy.com/media/26tOZ42Mg6pbTUPHW/giphy.gif);
     background-size: auto 100%;
     background-attachment: fixed;
@@ -127,7 +92,6 @@ color: white;
 }
 
 .entrywrap, .commentwrap{background-color:black !important;}
-/* img{filter:invert(0%) !important;} */
 #side *, .month-image, .entrywrap *, .commentwrap *{filter:invert(100%);}
 
 div#page-wrapper::before {
