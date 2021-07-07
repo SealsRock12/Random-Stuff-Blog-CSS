@@ -1,0 +1,57 @@
+[center]
+[img width=55]https://i.ibb.co/Sc6SnCt/Pj-ZW48-Z-1.png[/img]
+[/center]
+
+
+Welcome to Random Stuff! This blog is where I do all sorts of random things (just look at the entries lol). The base CSS is made by @ihatemath123, with modifications done by @AndrewC10, @ihatemath123, @forester2015, and @sealsrock. 
+
+Please tag your entries with your username. If you see an entry that doesn't have that, please add the tag!
+
+The CSS for this blog (along with much more things) are all in a GitHub repository [url=https://github.com/BypassSpace/Random-Stuff-Blog-CSS]here[/url]. 
+
+Sign up for a contributor [url=https://artofproblemsolving.com/community/c2398756]here[/url]. There will be activity checks if you are a contributor, [url=https://artofproblemsolving.com/community/c2398755]here[/url].
+
+Here are some cool entries:
+[list]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2431473]Quote with an avatar[/url] [hide=Example][hide=Post #3 by forester2015][url=aops.com/community/user/546163][b]forester2015[/b][/url] · 12 minutes ago [url=https://aops.com/community/p2504062](view)[/url][color=transparent]helo[/color]
+Yes!!!!!!!!!!!!!!!!!!!!
+
+-----------
+[color=#5b7083][aops]x[/aops] 3[color=transparent]hellloolo[/color] [aops]Y[/aops] 0 [color=transparent]hellloolo[/color] [/hide]
+
+[tip=@forester2015][img]https://avatar.artofproblemsolving.com/avatar_546163.png?t=1610955242[/img]
+AoPS User[/tip] [/hide]
+\\ \\
+[*] [hide=Guess the LaTeX Code]
+Self-explanatory. The OP makes two very similar (if not the same) LaTeX images, but the code is different! See which one is real and which is the gimmick. 
+
+[url=https://artofproblemsolving.com/community/c1632725t1234860f1632725_guess_the_latex_code]Guess the LaTeX Code Tag[/url] 
+
+Threads:
+
+
+[list]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2554321_guess_the_latex_code_part_1]Guess the LaTeX Code #1[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2555970_guess_the_latex_code_part_2]Guess the LaTeX Code #2[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2567570_guess_the_latex_code_part_3]Guess the LaTeX Code #3[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2569221_guess_the_latex_code_part_3_answer]Guess the LaTeX Code #3 (answer)[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2576438_guess_the_latex_code_4]Guess the LaTeX Code #4[/url]
+[/list]
+[/hide]
+
+
+[*] [hide=Personal Websites]
+Links to websites that have been posted here! The link leads to the entry, not the website itself.
+
+
+[list] 
+[*] [url=https://artofproblemsolving.com/community/c1632725h2558058]https://coding-bot-1.github.io[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2559249]https://actiniumn404.github.io[/url]
+[*] [url=https://artofproblemsolving.com/community/c1632725h2559481]https://enigmatology.github.io[/url]
+[/list]
+
+[/hide]
+
+
+[*] [url=https://artofproblemsolving.com/community/c1632725h2583288_test_post_icons]Post Icons[/url]
+[/list]
