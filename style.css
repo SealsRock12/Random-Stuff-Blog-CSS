@@ -320,6 +320,20 @@ span[style="font-family:'icon-riddle'"]::before {
   right: 5px;
   top: -52px;
 }
+span[style="font-family:'icon-sad'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/google/noto-emoji-smileys/256/10032-sad-but-relieved-face-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+
 
 #side .cmty-itembox {
   height: 300px;
