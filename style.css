@@ -294,6 +294,32 @@ span[style="font-family:'icon-statistics'"]::before {
   right: 5px;
   top: -52px;
 }
+span[style="font-family:'icon-puzzle'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-riddle'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/graphicloads/flat-finance/256/puzzle-icon.png");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
 
 #side .cmty-itembox {
   height: 300px;
