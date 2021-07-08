@@ -116,10 +116,12 @@ a[href="/community/user/364963"]::before {
 #main > div:nth-of-type(1) {
   margin-top: 55px;
 }
+
 #main > div:nth-last-of-type(2),
 #main > div:nth-last-of-type(3) {
   margin-top: 0px !important;
 }
+
 #main > div:nth-last-of-type(2)::before,
 #main > div:nth-last-of-type(3)::before {
   display: none !important;
