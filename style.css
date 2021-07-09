@@ -38,32 +38,12 @@ CREDITS TO:
 }
 
 /* ADMIN ICONS Credit to GG Otto*/
-/* forester2015 */
-a[href="/community/user/546163"]::before {
-  content: "X";
-  font-family: AoPS;
-}
-
-/* AndrewC10 */
-a[href="/community/user/499928"]::before {
-  content: "X";
-  font-family: AoPS;
-}
-
-/* mathlearner2357 */
-a[href="/community/user/718378"]::before {
-  content: "X";
-  font-family: AoPS;
-}
-
-/* ihatemath123 */
-a[href="/community/user/419930"]::before {
-  content: "X";
-  font-family: AoPS;
-}
-
-/* sealsrock */
-a[href="/community/user/364963"]::before {
+a[href="/community/user/546163"]::before,  /* forester2015 */
+a[href="/community/user/499928"]::before,  /* AndrewC10 */
+a[href="/community/user/718378"]::before,  /* mathlearner2357 */
+a[href="/community/user/419930"]::before,  /* ihatemath123 */
+a[href="/community/user/364963"]::before   /* sealsrock */
+{
   content: "X";
   font-family: AoPS;
 }
@@ -337,6 +317,19 @@ span[style="font-family:'icon-anything'"]::before {
   position: absolute;
   content: "   ";
   background-image: url("https://www.svgrepo.com/show/257590/asterisk.svg");
+  border-radius: 100px;
+  background-size: 32px 32px;
+  height: 32px;
+  width: 32px;
+  background-repeat: no-repeat;
+  float: right;
+  right: 5px;
+  top: -52px;
+}
+span[style="font-family:'icon-latex'"]::before {
+  position: absolute;
+  content: "   ";
+  background-image: url("https://icons.iconarchive.com/icons/untergunter/leaf-mimes/256/text-x-tex-icon.png");
   border-radius: 100px;
   background-size: 32px 32px;
   height: 32px;
