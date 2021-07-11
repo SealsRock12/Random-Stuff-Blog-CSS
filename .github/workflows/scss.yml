@@ -30,7 +30,7 @@ jobs:
         run: |
           git config --local user.email 'scss@example.com'
           git config --local user.name 'SCSS Compiler'
-          git add assets/css/*
+          git add dist/
           git commit -m 'SCSS Compile: ${{ github.event.head_commit.message }}'
 
       - name: Push changes
