@@ -22,8 +22,9 @@ jobs:
           destination: /tmp/Random-Stuff-Blog-CSS/dist/style.css
 
       - name: Move compiled CSS to dist
-        run: rm -rf dist/
-        run: mv /tmp/Random-Stuff-Blog-CSS/dist dist/
+        run: |
+          rm -rf dist/
+          mv /tmp/Random-Stuff-Blog-CSS/dist dist/
 
       - name: Add and Commit changes
         run: |
