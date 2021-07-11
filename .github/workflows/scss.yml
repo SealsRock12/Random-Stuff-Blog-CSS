@@ -13,16 +13,17 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Make destination directory for compiled CSS
-        run: mkdir -vp /tmp/Random-Stuff-Blog-CSS/css
+        run: mkdir -vp /tmp/Random-Stuff-Blog-CSS/dist
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.4.3
         with:
           source: style.scss
-          destination: /tmp/Random-Stuff-Blog-CSS/assets/css/main.css
+          destination: /tmp/Random-Stuff-Blog-CSS/dist/style.css
 
       - name: Move compiled CSS to dist
-        run: mv /tmp/Random-Stuff-Blog-CSS/assets/css dist/
+        run: rm -rf dist/
+        run: mv /tmp/Random-Stuff-Blog-CSS/dist dist/
 
       - name: Add and Commit changes
         run: |
