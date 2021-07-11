@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - src-pages
+
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+
+      - name: Make destination directory for compiled CSS
+        run: mkdir -vp /tmp/repo-name/Random-Stuff-Blog-CSS/css
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.4.3
+        with:
+          source: style.scss
+          destination: /tmp/Random-Stuff-Blog-CSS/assets/css/main.css
+
+      - name: Move compiled CSS to dist
+        run: mv /tmp/Random-Stuff-Blog-CSS/assets/css dist/
+
+      - name: Add and Commit changes
+        run: |
+          git config --local user.email 'scss@example.com'
+          git config --local user.name 'SCSS Compiler'
+          git add assets/css/*
+          git commit -m 'SCSS Compile: ${{ github.event.head_commit.message }}'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
